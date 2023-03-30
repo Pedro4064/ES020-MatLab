@@ -1,0 +1,25 @@
+function [atan_x] = meu_atan(x,eps)
+ %
+
+ % First check if value x is within the series domain
+ % If not, use its identity for the inverse of x, as seen bellow
+ if abs(x) > 1
+     atan_x = pi/2 - meu_atan(1./x, eps);
+     return 
+ end
+ 
+ % If within domain, set Starting Values for the summation
+ n = 0;                % Index of the sum
+ sign = 1;             % The number that determines if it is a sum or subtratrcion
+ atan_x = 0;           % The final sum
+ in_range = true;      % Stopping criteria
+
+ while in_range
+     current_sum = ((x .* (n == 0)) +  ) ./ (2*n + 1);
+
+ 
+    %  Update values for next iteration
+    sign = -sign;
+    n = n + 1;
+ end
+end
