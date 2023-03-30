@@ -1,5 +1,10 @@
 function [r,theta] = coordPolar(x,y)
- %
+% COORDPOLAR transforma coordenadas retangulares em polar
+%
+% [r, theta] = coordPolar(x,y) retornar o r e theta, respectivamente, para
+% as coordenadas retangulares/cartesianas x,y
+%
+% See also CART2POL
 
 %  Calculate the radius
 r = sqrt(x^2 + y^2);

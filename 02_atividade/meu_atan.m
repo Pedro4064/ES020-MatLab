@@ -1,10 +1,15 @@
 function [atan_x] = meu_atan(x,eps)
- %
+% MEU_ATAN calcula por série o arco tangente de x, com precisão eps
+%
+% [atan_x] = meu_atan(0.5, 1e-10) Calcula o arco tangente de 0.5 com
+% precisão de 1e-10
+%
+% See also ATAN, ATAN2, TAN, ATAND, ATAN2D
 
  % First check if value x is within the series domain
  % If not, use its identity for the inverse of x, as seen bellow
  if abs(x) > 1
-     atan_x = pi/2 - meu_atan(1./x, eps);
+     atan_x = pi./2 - meu_atan(1./x, eps);
      return 
  end
  
