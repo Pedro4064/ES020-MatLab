@@ -1,0 +1,7 @@
+function [n] = number_gen()
+% NUMBER_GEN Returs the numbers to be used for beam modeling
+%   [n] = NUMBER_GEN('215663') Returns [2 1 5 6 6 3], 1x6 row vector
+RA = '215663'
+s_RA  = regexp(RA, '\d', 'match')
+
+end
