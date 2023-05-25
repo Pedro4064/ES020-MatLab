@@ -1,4 +1,4 @@
-function [L, Izz, M0, h] = modeling_data_gen(d)
+function [L, Izz, M0, h, b] = modeling_data_gen(d)
 % MODELING_DATA_GEN Generates all the necessay parameters for the modeling
 % of a beam
 % [L, Izz, M0] = MODELING_DATA_GEN([2 1 5 6 6 3]) Returns L = length, Izz =
